@@ -1,6 +1,6 @@
 .topHeader {
-    background-color: skyblue;
-    height: 100px;
+    background-color: pink;
+    height: 90px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -10,10 +10,26 @@
     height: 100%;
 }
 .topHeader .logo img {
+    display: block;
+    margin: auto;
     width:300px;
+   
+}
+.icon-list{
+    top:23px;
+    right: 20px;
+    height: 56px;
+    width: 200px;
+    align-items: center;
+    position: absolute;
+
 }
 
+.icon-list li img{
 
+    width: 50px;
+}
+/* *은 전체 태그*/
 
 
 #bottomMenu {
