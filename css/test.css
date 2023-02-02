@@ -5,15 +5,34 @@
     box-sizing: border-box;
 }
 .inner{
+    position: relative;
     max-width: 1240px;
     margin:0 auto;
     height: 100%;
+    padding: 0 20px;
 }
-.topHeader .logo img {
-    display: block;
+
+.topHeader .logo{
+    width: 300px;
+    text-align: center;
     margin: auto;
-    width:300px;
-   
+}
+
+.topHeader .logo img {
+    display: inline-block;
+    margin-top: 15px;
+    margin: auto;
+    width:300px;  
+}
+.hello {
+    position: relative;
+    bottom: 0;
+    width: 120px;
+}
+.hello p{
+    display: inline-block;
+    width: 130px;
+    height: 20px;
 }
 .icon-list{
     top:23px;
@@ -22,20 +41,25 @@
     width: 200px;
     align-items: center;
     position: absolute;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .icon-list li img{
-
-    width: 50px;
+    width: 60px;
 }
 /* *은 전체 태그*/
 
+.bottomHeader{
+    background-color:#fffbbf;
+}
+
+
 
 #bottomMenu {
-    height: 30px;
-    width: 850;
+  
 }
-#bottomMenu li{
-     
+#bottomMenu ul{
+    display: flex;
+    justify-content: center; 
 }
