@@ -25,14 +25,24 @@
     width:300px;  
 }
 .hello {
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 120px;
+   
 }
 .hello p{
     display: inline-block;
     width: 130px;
     height: 20px;
+    border: 1px solid #222;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 13px;
+    text-align: center;
+  
+}
+.hello img{
+    width: 100%;
 }
 .icon-list{
     top:23px;
@@ -54,12 +64,45 @@
     background-color:#fffbbf;
 }
 
-
-
 #bottomMenu {
-  
+    text-align: center;
+    position: relative;
+    
 }
 #bottomMenu ul{
-    display: flex;
-    justify-content: center; 
+   display: inline-block 
+    
+}
+#bottomMenu ul li{
+    float: left;
+    text-align: center;
+    padding-right: 20px;
+    font-size: 12px;
+    position: relative;
+}
+#bottomMenu ul li::after{
+    content:'';
+    width: 1px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 11px; 
+    /* 오른쪽을 기준으로 0px, 오른쪽으로 배치하려고 하면 px작게 주기*/
+}
+
+#bottomMenu ul li:nth-last-child(1){
+    padding-right:0px;
+}
+
+#bottomMenu ul li:nth-last-child(1)::after{
+    display: none;
+}
+
+.searchProduct{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
 }
